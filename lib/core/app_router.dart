@@ -2,7 +2,7 @@ import 'package:easy_counter/features/home/presention/views/screens/home_view.da
 import 'package:easy_counter/features/splash/presention/views/screens/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
-abstract class AppRouter {
+abstract class AppRouters {
   static const kHomeView = '/kHomeView';
   static const kSplashView = '/';
   static final router = GoRouter(routes: [

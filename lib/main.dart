@@ -1,4 +1,4 @@
-import 'package:easy_counter/features/home/presention/views/screens/home_view.dart';
+import 'package:easy_counter/core/app_router.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,8 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomeView(),
+    return MaterialApp.router(
+      routerConfig: AppRouters.router,
+      debugShowCheckedModeBanner: false,
     );
   }
 }
