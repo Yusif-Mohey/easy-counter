@@ -1,4 +1,5 @@
 import 'package:easy_counter/core/app_router.dart';
+import 'package:easy_counter/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       routerConfig: AppRouters.router,
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-        // scaffoldBackgroundColor: appColors[0],
+        iconTheme: IconThemeData(color: appColors[2], size: 32),
         textTheme: GoogleFonts.arvoTextTheme(
           ThemeData.dark().textTheme,
         ),

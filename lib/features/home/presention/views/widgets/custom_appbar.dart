@@ -10,10 +10,11 @@ class CustomAppBar extends StatelessWidget {
     return Row(
       children: [
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Scaffold.of(context).openDrawer();
+          },
           icon: const FaIcon(
             FontAwesomeIcons.list,
-            color: Colors.amberAccent,
           ),
         ),
         const Spacer(),
@@ -26,7 +27,6 @@ class CustomAppBar extends StatelessWidget {
           onPressed: () {},
           icon: const FaIcon(
             FontAwesomeIcons.hourglassHalf,
-            color: Colors.amberAccent,
           ),
         ),
       ],
