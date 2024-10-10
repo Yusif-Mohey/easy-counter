@@ -35,10 +35,18 @@ class _SplashViewBodyState extends State<SplashViewBody>
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Image.asset(
-          AssetsData.logo,
-          width: MediaQuery.of(context).size.width / 2,
-          height: MediaQuery.of(context).size.height / 3,
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 128.0),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(32),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Image.asset(
+                AssetsData.logo,
+                fit: BoxFit.fill,
+              ),
+            ),
+          ),
         ),
         const SizedBox(
           height: 4,
@@ -59,8 +67,8 @@ class _SplashViewBodyState extends State<SplashViewBody>
   }
 
   void navigatingToHomeView() {
-    // Future.delayed(const Duration(seconds: 2), () {
-    //   GoRouter.of(context).push(AppRouters.kHomeView);
-    // });
+    Future.delayed(const Duration(seconds: 3), () {
+      GoRouter.of(context).push(AppRouters.kHomeView);
+    });
   }
 }
