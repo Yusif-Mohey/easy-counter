@@ -8,12 +8,15 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Column(
-        children: [
-          const CustomAppBar(),
-          SizedBox(height: MediaQuery.of(context).size.height / 3),
-          const Center(child: EmptyDay()),
-        ],
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        child: Column(
+          children: [
+            const CustomAppBar(),
+            SizedBox(height: MediaQuery.of(context).size.height / 3),
+            const Center(child: EmptyDay()),
+          ],
+        ),
       ),
     );
   }
