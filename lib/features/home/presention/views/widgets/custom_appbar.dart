@@ -1,3 +1,4 @@
+import 'package:easy_counter/core/constants/imges.dart';
 import 'package:easy_counter/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -9,24 +10,34 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        IconButton(
-          onPressed: () {
-            Scaffold.of(context).openDrawer();
-          },
-          icon: const FaIcon(
-            FontAwesomeIcons.list,
-          ),
+        CircleAvatar(
+          backgroundColor: Colors.white,
+          child: Image.asset(AssetsData.spalshLogo),
         ),
-        const Spacer(),
+        const SizedBox(width: 6),
         const Text(
-          'Easy Counter',
+          'Counte it easliy',
           style: Styles.textStyle24,
         ),
         const Spacer(),
         IconButton(
           onPressed: () {},
+          icon: const Icon(
+            Icons.add,
+          ),
+        ),
+        IconButton(
+          onPressed: () {},
           icon: const FaIcon(
-            FontAwesomeIcons.hourglassHalf,
+            FontAwesomeIcons.comment,
+          ),
+        ),
+        IconButton(
+          onPressed: () {
+            Scaffold.of(context).openDrawer();
+          },
+          icon: const FaIcon(
+            FontAwesomeIcons.ellipsisVertical,
           ),
         ),
       ],

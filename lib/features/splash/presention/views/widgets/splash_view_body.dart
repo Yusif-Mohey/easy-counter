@@ -42,7 +42,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
             child: AspectRatio(
               aspectRatio: 1,
               child: Image.asset(
-                AssetsData.logo,
+                AssetsData.spalshLogo,
                 fit: BoxFit.fill,
               ),
             ),

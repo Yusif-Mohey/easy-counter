@@ -13,15 +13,6 @@ class CustomSideListDrawer extends StatelessWidget {
           child: IconButton(
             onPressed: () {},
             icon: const FaIcon(
-              FontAwesomeIcons.person,
-            ),
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 16),
-          child: IconButton(
-            onPressed: () {},
-            icon: const FaIcon(
               FontAwesomeIcons.solidFolder,
             ),
           ),
