@@ -1,4 +1,4 @@
-import 'package:easy_counter/core/app_router.dart';
+import 'package:easy_counter/core/utils/app_router.dart';
 import 'package:easy_counter/core/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';

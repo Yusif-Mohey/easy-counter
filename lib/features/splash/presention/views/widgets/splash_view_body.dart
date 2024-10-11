@@ -3,7 +3,7 @@ import 'package:easy_counter/features/splash/presention/views/widgets/silding_te
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../../core/app_router.dart';
+import '../../../../../core/utils/app_router.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});

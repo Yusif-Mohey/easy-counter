@@ -14,7 +14,7 @@ class HomeViewBody extends StatelessWidget {
           children: [
             const CustomAppBar(),
             SizedBox(height: MediaQuery.of(context).size.height / 3),
-            const Center(child: EmptyDay()),
+            const EmptyDay(),
           ],
         ),
       ),
